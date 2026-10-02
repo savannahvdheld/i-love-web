@@ -2,8 +2,12 @@ body{
   background-color: rgb(145, 206, 237);
 }
 
+div{
+  margin-left:2%;
+}
 nav{
-  grid-template-rows:
+  grid-template-rows:;
+  border-radius:20px;
 }
 .layout {
   display: grid;
