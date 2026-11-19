@@ -10,16 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdownContent.classList.toggle('show');
   });
 
-  // Update geselecteerde opties
+  // Geselecteerde opties
   checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
       const selected = [...checkboxes]
         .filter(cb => cb.checked)
         .map(cb => cb.nextSibling.textContent.trim());
+   
 
-      selectedOptions.textContent = selected.length
-        ? `Geselecteerd: ${selected.join(', ')}`
-        : 'Geen opties geselecteerd.';
     });
   });
 
