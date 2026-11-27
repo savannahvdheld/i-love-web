@@ -10,15 +10,16 @@ nav{
   /* grid-template-rows; */
   border-radius:20px;
 }
-.layout {
-  display: grid;
-  grid-template-columns: 220px 1fr; 
-  min-height: 100vh;
-}
 
-.sidebar {
+header{
+  display: grid;
+  justify-items: center;
+  position: sticky;
+  z-index: 0;
+  grid-template-columns: 1fr 4fr 1fr;
   background: #ffffff;
-  padding: 1rem;
+  border-radius: 10px;
+
 }
 
 .sidebar ul {
